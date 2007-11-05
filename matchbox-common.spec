@@ -1,15 +1,15 @@
 %define name 	matchbox-common
 %define version 0.9.1
-%define release 1mdk
+%define release %mkrel 2
 
 Summary: 	Shared files for the Matchbox Desktop
 Name: 		%name
 Version: 	%version
 Release: 	%release
 Url: 		http://matchbox.handhelds.org/
-License: 	GPL
+License: 	GPLv2+
 Group: 		Graphical desktop/Other
-Source: 	%{name}-%{version}.tar.bz2
+Source: 	http://matchbox-project.org/sources/%{name}/0.9/%{name}-%{version}.tar.bz2
 
 Buildroot: 	%_tmppath/%name-%version-buildroot
 BuildRequires:	pkgconfig libmatchbox-devel
@@ -43,4 +43,3 @@ rm -rf $RPM_BUILD_ROOT
 %_datadir/matchbox
 %_datadir/pixmaps/*
 %_iconsdir/blondie
-
