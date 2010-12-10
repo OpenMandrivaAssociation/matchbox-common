@@ -1,6 +1,6 @@
 %define name 	matchbox-common
 %define version 0.9.1
-%define release %mkrel 5
+%define release %mkrel 6
 
 Summary: 	Shared files for the Matchbox Desktop
 Name: 		%name
