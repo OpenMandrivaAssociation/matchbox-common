@@ -1,0 +1,18 @@
+diff --git a/matchbox-session b/matchbox-session
+index 65f1ce7..aa1ccd3 100755
+--- a/matchbox-session
++++ b/matchbox-session
+@@ -15,10 +15,12 @@ if [ -e /etc/matchbox/session ]
+ then
+ exec /etc/matchbox/session
+ fi
++# export DBUS session ID
++export $(dbus-launch)
+ 
+ # Default files to run if $HOME/.matchbox/session or /etc/matchbox/session
+ # dont exist. 
+ 
+ matchbox-desktop &
+-matchbox-panel  --orientation south &
++matchbox-panel &
+ exec matchbox-window-manager $@

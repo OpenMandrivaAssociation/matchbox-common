@@ -6,6 +6,8 @@ Url: 		http://matchbox.handhelds.org/
 License: 	GPLv2+
 Group: 		Graphical desktop/Other
 Source0: 	http://matchbox-project.org/sources/%{name}/0.9/%{name}-%{version}.tar.bz2
+Patch0:		matchbox-session-good.patch
+Requires:	dbus-x11
 
 BuildRequires:	pkgconfig(libmb)
 BuildArch:	noarch
@@ -19,6 +21,7 @@ This package contains graphics and scripts required by Matchbox.
 
 %prep
 %setup -q
+%apply_patches
 
 %build
 %configure
