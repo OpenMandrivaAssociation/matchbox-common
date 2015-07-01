@@ -9,6 +9,9 @@ Source0: 	http://matchbox-project.org/sources/%{name}/0.9/%{name}-%{version}.tar
 Source1:	session
 Patch0:		matchbox-session-good.patch
 Requires:	dbus-x11
+Requires:	gtk+2.0-common
+Requires:	hicolor-icon-theme
+Requires:	gdk-pixbuf2.0
 
 BuildRequires:	pkgconfig(libmb)
 BuildArch:	noarch

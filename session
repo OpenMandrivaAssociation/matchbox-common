@@ -1,7 +1,5 @@
 #!/bin/sh
 
-. /etc/formfactor/config
-
 if [ "$HAVE_TOUCHSCREEN" = "1" ]; then
     SHOWCURSOR="no"
 else
