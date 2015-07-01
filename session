@@ -20,7 +20,11 @@ matchbox-desktop &
 
 START_APPLETS=showdesktop,windowselector
 END_APPLETS=clock,battery,$KEYBOARD_APPLET,systray,startup-notify,notify
-END_APPLETS=openmoko-panel-gsm,$END_APPLETS # feature-phone
+END_APPLETS=$END_APPLETS # feature-phone
+CMD="matchbox-keyboard -d"
+
+# run keyboard
+dbus-wait org.matchbox_project.desktop Loaded && $CMD &
 
 matchbox-panel --titlebar --start-applets $START_APPLETS --end-applets $END_APPLETS &
 
