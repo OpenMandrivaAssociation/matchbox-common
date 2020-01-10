@@ -25,7 +25,7 @@ This package contains graphics and scripts required by Matchbox.
 
 %prep
 %setup -q
-%apply_patches
+%autopatch -p1
 
 %build
 %configure
