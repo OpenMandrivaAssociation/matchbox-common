@@ -2,7 +2,7 @@ Summary: 	Shared files for the Matchbox Desktop
 Name: 		matchbox-common
 Version: 	0.9.1
 Release: 	9
-Url: 		http://matchbox.handhelds.org/
+Url: 		https://matchbox.handhelds.org/
 License: 	GPLv2+
 Group: 		Graphical desktop/Other
 Source0: 	http://matchbox-project.org/sources/%{name}/0.9/%{name}-%{version}.tar.bz2
