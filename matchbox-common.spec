@@ -13,6 +13,11 @@ Requires:	gtk+2.0-common
 Requires:	hicolor-icon-theme
 Requires:	gdk-pixbuf2.0
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	pkgconfig(libmb)
 BuildArch:	noarch
 
